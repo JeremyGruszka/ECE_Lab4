@@ -19,3 +19,10 @@ In order to make sure that my program worked, I went through and made sure the r
 
 #### ALU Sim debugging
 The only real problem I had with the ALU sim portion of the lab was the ROR function.  I could not figure out how to rotate right for the life of me.  So I googled bit rotation and found out there was a built in rotate_right function in the program that I could use.  After that, my program was good.
+
+#### Datapath Simulation pictures
+
+![alt text](https://raw.githubusercontent.com/JeremyGruszka/ECE_Lab4/master/datapathSimPic.PNG "First Half")
+
+#### Datapath Debugging
+Was able to do this part of the lab fairly easily.  The biggest problem was that the first time I ran through the simulation, my AeqZero and AlessZero were 'U" instead of '1' or '0'.  I found out that the problem was in the instantiation of my ALU in the datapath program.  I had it hooked up to the incorrect wires.  Once I fixed the wiring, my simulation worked correctly, showing that the program I wrote was correct.  I confirmed that my simulation was correct by comparing it piece by piece to the picture provided in the lab.
